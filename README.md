@@ -1,6 +1,6 @@
 # MyNotes
 
-Notes app for MacOS, created using SwiftUI with the implement of SwiftData.
+Notes app for MacOS, created using SwiftUI with implementation of SwiftData.
 
 ### Preview:
 
