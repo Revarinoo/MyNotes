@@ -43,10 +43,8 @@ struct NoteView: View {
                 ScrollView(.vertical) {
                     LazyVGrid(columns: Array(repeating: GridItem(spacing: 30), count: rowCount), spacing: 30, content: {
                         ForEach(notes) { note in
-                            NavigationLink(destination: DetailView(), label: {
-                                NoteCardView(note: note, isKeyboardEnabled: $isFocused)
-                            })
-                                
+                            NoteCardView(note: note, isKeyboardEnabled: $isFocused)
+                            
                                 .contextMenu(ContextMenu(menuItems: {
                                     Button(note.isFavourite ? "Remove from favourites" : "Move to favourites") {
                                         note.isFavourite.toggle()
